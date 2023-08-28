@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 85%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.left {
+  text-align: start;
+  margin-right: 50px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.left p {
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.right {
+  width: 70%;
+}
+.box-blue {
+  font-size: 14px;
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 9px;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+.box-form {
+  display: block;
+}
+input {
+  border-radius: 5px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+button {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: hsl(154, 59%, 51%);
+  padding: 18px 20px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.right p {
+  font-size: 11px;
+  font-weight: 600;
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+}
+small {
+  font-size: 11px;
+  font-weight: 600;
+  color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    background-image: url(images/bg-intro-mobile.png);
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .left {
+    text-align: center;
+    margin: 30px;
+  }
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1;
+    margin-top: 50px;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+  .box-blue {
+    padding: 20px 40px;
+    margin-top: 15px;
+  }
+
+  button {
+    padding: 18px 10px;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+  }
+}
